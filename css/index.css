@@ -72,6 +72,30 @@
   background: transparent;
 }
 
+.btn-entrar {
+  position: relative;
+}
+
+.entrarDropdown{
+  display: none; 
+  position: absolute; 
+  top: 100%; 
+  left: 0; 
+  background: #fff; 
+  border: 1px solid #ffffff; 
+  z-index: 10;
+  color: black;
+}
+
+.opcao1, .opcao2{
+  display: block; 
+  width: 100%; 
+  border: none; 
+  background: none; 
+  padding: 8px; 
+  text-align: left;
+}
+
 main {
   display: flex;
   align-content: center;

@@ -18,8 +18,26 @@
       <div class="titulo">
         <button><h2>CLÍNICA</h2></button>
       </div>
+
       <div class="faixa_btn">
-        <button>Entrar</button>
+        <div class="btn-entrar">
+          <button id="entrarBtn" type="button">Entrar</button>
+          <div id="entrarDropdown" class="entrarDropdown">
+            <button class="opcao1" onclick="window.location.href='paciente.html'">Área Paciente</button>
+            <button class="opcao2" onclick="window.location.href='medico.html'">Área Médico</button>
+          </div>
+        </div>
+        <script>
+          const entrarBtn = document.getElementById('entrarBtn');
+          const entrarDropdown = document.getElementById('entrarDropdown');
+          document.addEventListener('click', function(e) {
+            if (entrarBtn.contains(e.target)) {
+              entrarDropdown.style.display = entrarDropdown.style.display === 'block' ? 'none' : 'block';
+            } else if (!entrarDropdown.contains(e.target)) {
+              entrarDropdown.style.display = 'none';
+            }
+          });
+        </script>
         <button>Agendar Consulta</button>
         <button>Fale Conosco</button>
         <button>Sobre Nós</button>
