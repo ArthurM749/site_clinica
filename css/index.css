@@ -1,0 +1,241 @@
+:root {
+  --primary-color: #091740;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --light-color: #ecf0f1;
+  --dark-color: #2c3e50;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--light-color);
+  margin: 0px;
+}
+
+.faixa {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.faixa h2 {
+  color: var(--light-color);
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0px;
+  text-align: center;
+  width: 0px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.faixa button {
+  background: none; /* Remove o fundo do botão */
+  border: none; /* Remove bordas do botão */
+  padding: 0; /* Remove o espaçamento interno */
+}
+
+.faixa a {
+  text-decoration: none;
+  background: transparent;
+}
+
+.faixa_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.faixa_btn button {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.faixa_btn button:hover {
+  background-color: var(--secondary-color);
+}
+
+.faixa_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+}
+
+main {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  display: inline-block;
+
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+main img {
+  filter: brightness(30%);
+  display: block; /* Garante que a imagem não tenha espaçamento extra */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta a imagem para cobrir todo o container */
+  object-position: center;
+}
+
+main h1, h3 {
+  background: transparent;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza o texto */
+  color: white; /* Define a cor do texto */
+  font-size: 20px; /* Define o tamanho da fonte */
+  background: transparent;
+}
+
+.texto-sobre {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 100px;
+}
+
+.texto-sobre h2, .texto-sobre p {
+  padding: 10px;
+}
+
+.texto-sobre-a {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.areas {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.area-paciente, .area-medico, .tire-duvidas {
+  border: 3px solid var(--primary-color);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 2cm;
+  width: 350px;
+  height: 210px;
+}
+
+.area-paciente svg, .area-medico svg, .tire-duvidas svg {
+  color: var(--primary-color);
+}
+
+.area-paciente p, .area-medico p, .tire-duvidas p {
+  font-size: medium;
+  padding: 10px;
+}
+
+.area-paciente button, .area-medico button, .tire-duvidas button {
+  background-color: #3498db;
+  border: none;
+  width: 200px;
+  height: 45px;
+  border-radius: 10px;
+  font-size: large;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.area-paciente button:hover, .area-medico button:hover, .tire-duvidas button:hover{
+  background-color: var(--accent-color);
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.card1, .card2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 2cm;
+  border: 3px solid var(--dark-color);
+  border-radius: 20px;
+  width: 350px;
+  height: 110px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 20px;
+}
+
+footer * {
+  background-color: transparent;
+}
+
+footer article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+footer article p {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer article h2 {
+  margin-bottom: 10px;
+}
+
+footer article a {
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: var(--light-color);
+}
+
+footer article a:hover {
+  text-decoration: underline;
+}
+
+.links {
+  padding-right: 100px;
+}
+
+.direitos {
+  padding-left: 30px;
+}
