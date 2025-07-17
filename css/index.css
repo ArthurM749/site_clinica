@@ -137,9 +137,9 @@ main h1, h3 {
 
 .texto-sobre {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 100px;
-}
+ }
 
 .texto-sobre h2, .texto-sobre p {
   padding: 10px;
