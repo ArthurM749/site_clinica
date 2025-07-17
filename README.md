@@ -81,7 +81,7 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 Para dúvidas, sugestões ou colaborações:
 
 - Autor: [ArthurM749](https://github.com/ArthurM749)
-- E-mail: (adicione seu e-mail de contato, se desejar)
+- E-mail: (arthurmccomp@gmail.com)
 
 ---
 
