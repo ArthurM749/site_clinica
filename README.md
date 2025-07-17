@@ -84,5 +84,3 @@ Para dúvidas, sugestões ou colaborações:
 - E-mail: (arthurmccomp@gmail.com)
 
 ---
-
-Sinta-se à vontade para personalizar este README conforme as necessidades específicas do seu projeto!
